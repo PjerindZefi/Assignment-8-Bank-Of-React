@@ -1,0 +1,173 @@
+.App 
+{
+    text-align: center;
+}
+
+.App-header 
+{
+    font-size: calc(10px + 1.5vmin);
+    color: black;
+}
+.page-header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dollar
+{
+    width: 400px;
+    height: 400px;
+}
+
+/* inputs */
+
+input
+{
+    padding: 10px;
+    border: medium solid #282c34;
+    border-radius: 10px;
+}
+
+input:focus
+{
+    position: relative;
+    border: medium solid lightgreen;
+}
+
+input:focus,
+input:active
+{
+    outline: none;
+}
+
+/* scroll down */
+
+body::-webkit-scrollbar
+{
+    width: 0.35em;
+}
+
+body::-webkit-scrollbar-track
+{
+    background: #282c34;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background: darkslategrey;
+}
+
+/* buttons */
+
+button
+{
+    background-color: #b2b9c0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: calc(10px + 1vmin);
+    padding: 10px;
+    margin: 20px 10px 0 10px;
+}
+
+button:hover
+{
+    background-color: rgb(158, 145, 155);
+}
+
+button:active
+{
+    position: relative;
+    top: 2px;
+}
+
+button:active,
+button:focus
+{
+    outline: none;
+}
+
+fieldset
+{
+    border: thin solid gray;
+    width: 50%;
+    margin: auto;
+}
+
+legend
+{
+    padding: 0.5rem 2rem;
+    outline: thin solid gray;
+}
+
+/* debit & credit cards */
+
+.debit-card,
+.credit-card
+{
+    position: relative;
+    transition: box-shadow 0.6s;
+
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 25px;
+    transition: 0.3s;
+    padding: 2px 16px;
+}
+.container
+{
+    border: 5px solid;
+    border-radius: 50px;
+    margin: 40px;
+    background-color: bisque;
+    padding: 20px;
+}
+.debit-card
+{
+    background-color: #d4d3d4;
+}
+
+.credit-card
+{
+    background-color: #d4d3d4;
+}
+
+.debit-card:hover,
+.credit-card:hover
+{
+    cursor: pointer;
+    box-shadow: 0 16px 12px 0 rgba(0,0,0,0.5);
+}
+
+.debit-description,
+.credit-description
+{
+    border-radius: 25px;
+}
+
+.debit-description
+{
+    background-color: #b2b9c0;
+}
+
+.credit-description
+{
+    background-color: #b2b9c0;
+}
+
+.debit-details,
+.credit-details
+{
+    text-align: left;
+}
+
+.debit-card-grid,
+.credit-card-grid
+{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 2rem 4rem 4rem;
+}
